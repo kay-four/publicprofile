@@ -21,7 +21,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// function scrollToSection(index) {
+//     const slider = document.getElementById('slider');
+//     slider.style.transform = `translateX(-${index * 100}vw)`;
+// }
+
 function scrollToSection(index) {
     const slider = document.getElementById('slider');
     slider.style.transform = `translateX(-${index * 100}vw)`;
 }
+
+// Image slideshow rotation
+const images = ['profile.jpg', 'profile2.jpg', 'profile3.jpg'];
+let currentImage = 0;
+const profileImg = document.getElementById('profileImage');
+
+setInterval(() => {
+    currentImage = (currentImage + 1) % images.length;
+    profileImg.style.opacity = 0;
+
+    setTimeout(() => {
+        profileImg.src = images[currentImage];
+        profileImg.style.opacity = 1;
+    }, 500);
+}, 4000);

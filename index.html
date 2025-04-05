@@ -9,15 +9,18 @@
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="logo.png" alt="My Logo" class="logo-img">     
+
+        </div>
         <nav>
             <ul>
                 <li><a href="#" class="active" onclick="scrollToSection(0)">Home</a></li>
                 <li><a href="#about" onclick="scrollToSection(1)" id="'about">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#services" onclick="scrollToSection(2)" id="'services">Services</a></li>
+                <li><a href="#portfolio" onclick="scrollToSection(3)" id="'portfolio">Portfolio</a></li>
+                <li><a href="#experience" onclick="scrollToSection(4)" id="'experience">Experience</a></li>
+                <li><a href="#contact" onclick="scrollToSection(5)" id="'contact">Contact</a></li>
             </ul>
         </nav>
         <div class="lang">EN</div>
@@ -30,13 +33,13 @@
             <button class="download-btn">Download CV</button>
         </div>
         <div class="hero-image">
-            <img src="profile.png" alt="Cool Image of K4">
+            <img id="profileImage" src="profile.jpg" alt="Cool Image of K4">
         </div>
     </section>
     <section id="about" class="about">
         <div class="about-content">
             <h2>About Me</h2>
-            <p>I am a former TV presenter and voice-over artist with 6 years of experience in live and recorded TV shows. Transitioning into tech, I have built expertise in software development, application support, and troubleshooting defects in apps. I specialize in Android development using Kotlin and Java and have experience with automation tools and AI integration.</p>
+            <p>I am a former TV presenter with over 5 years of experience in live and recorded TV shows. Transitioning into tech, I have built expertise in software development, application support, and troubleshooting defects in apps and websites. I specialize in Android development using Kotlin and Java and have experience with monitoring and automation tools like AWX Ansible, Zabbix and Grafana as well AI integration with Azure.</p>
             <p>Currently, I create engaging content for social media, breaking down complex AI and tech concepts for beginners. My goal is to bridge the gap between tech and everyday users, making AI and software development more accessible.</p>
         </div>
     </section>

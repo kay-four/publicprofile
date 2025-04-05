@@ -12,9 +12,10 @@ header {
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+
+.logo-img {
+    height: 50px;
+    width: auto;
 }
 nav ul {
     list-style: none;
@@ -42,6 +43,25 @@ nav ul li a {
 .hero-content {
     max-width: 500px;
 }
+
+.hero-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    animation: slideFade 1s ease-in-out;
+}
+
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateX(30px) rotate(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+}
+
 .highlight {
     color: #ff3366;
     font-weight: bold;
