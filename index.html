@@ -16,30 +16,39 @@
         <nav>
             <ul>
                 <li><a href="#" class="active" onclick="scrollToSection(0)">Home</a></li>
-                <li><a href="#about" onclick="scrollToSection(1)" id="'about">About</a></li>
-                <li><a href="#services" onclick="scrollToSection(2)" id="'services">Services</a></li>
-                <li><a href="#portfolio" onclick="scrollToSection(3)" id="'portfolio">Portfolio</a></li>
-                <li><a href="#experience" onclick="scrollToSection(4)" id="'experience">Experience</a></li>
-                <li><a href="#contact" onclick="scrollToSection(5)" id="'contact">Contact</a></li>
+                <li><a href="#about" onclick="scrollToSection(1)" >About</a></li>
+                <li><a href="#services" onclick="scrollToSection(2)" >Services</a></li>
+                <li><a href="#portfolio" onclick="scrollToSection(3)" >Portfolio</a></li>
+                <li><a href="#experience" onclick="scrollToSection(4)" >Experience</a></li>
+                <li><a href="#contact" onclick="scrollToSection(5)" >Contact</a></li>
             </ul>
         </nav>
         <div class="lang">EN</div>
     </header>
     <section class="hero">
         <div class="hero-content">
-            <p>Hello</p>
+            <p>Hello!</p>
             <h1>I'm <span class="highlight">Kiptoo</span> Kirwa</h1>
-            <p class="description">Adapatable, always learning.</p>
+            <p class="description">Adaptable, always learning.</p>
             <button class="download-btn">Download CV</button>
         </div>
-        <div class="hero-image">
+        <div class="hero-image slider">
+            <div class="slides">
+                <img src="profile.jpg" alt="Profile Photo 1">
+                <img src="profile2.jpg" alt="Profile Photo 2">
+                <img src="profile3.jpg" alt="Profile Photo 3">
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>     
+        <!-- <div class="hero-image">
             <img id="profileImage" src="profile.jpg" alt="Cool Image of K4">
-        </div>
+        </div> -->
     </section>
     <section id="about" class="about">
         <div class="about-content">
             <h2>About Me</h2>
-            <p>I am a former TV presenter with over 5 years of experience in live and recorded TV shows. Transitioning into tech, I have built expertise in software development, application support, and troubleshooting defects in apps and websites. I specialize in Android development using Kotlin and Java and have experience with monitoring and automation tools like AWX Ansible, Zabbix and Grafana as well AI integration with Azure.</p>
+            <p>I am a former TV presenter with over 5 years of experience in live and recorded TV shows. Transitioning into tech, I have built expertise in software development, application support, and troubleshooting defects in apps and websites. I have a soft spot for Android development using Kotlin and have experience with monitoring and automation tools like AWX Ansible, Zabbix and Grafana as well AI integration with Azure.</p>
             <p>Currently, I create engaging content for social media, breaking down complex AI and tech concepts for beginners. My goal is to bridge the gap between tech and everyday users, making AI and software development more accessible.</p>
         </div>
     </section>
@@ -55,7 +64,7 @@
     <section id="portfolio" class="portfolio">
         <div class="portfolio-content">
             <h2>Portfolio</h2>
-            <p>I have worked with numerous local (Kenyan) international brands as a Voice Over Artiste</p>
+            <p>I have worked with numerous Kenyan and international brands as a Voice Over Artiste, bringing their products and services to life!</p>
             <p>I have hosted/moderated events, creating a lively, engaging atmosphere and keeping audiences attentive.</p>
         </div>
     </section>
