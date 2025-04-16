@@ -128,6 +128,26 @@ nav ul li a:hover {
 }
 
 .download-btn {
+    background: #ff3366;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.3s;
+}
+
+.download-btn:hover {
+    background: #e02d5a;
+    transform: translateY(-2px);
+}
+
+
+/* .download-btn {
     background: black;
     color: white;
     padding: 10px 20px;
@@ -139,7 +159,7 @@ nav ul li a:hover {
 
 .download-btn:hover {
     background: #ff3366;
-}
+} */
 
 /* Sections */
 section {
@@ -168,6 +188,24 @@ p {
     margin-top: 10px;
     line-height: 1.6;
 }
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
